@@ -63,18 +63,7 @@ const Skills = () => {
       icon: Terminal,
       techs: ["Git", "Docker", "AWS", "GitHub Actions", "Linux"]
     },
-    {
-      title: "Software Architecture",
-      description: "Designing scalable, maintainable, and robust software systems.",
-      icon: Code,
-      techs: ["Microservices", "Design Patterns", "System Design", "DDD", "TDD"]
-    },
-    {
-      title: "Data Analysis",
-      description: "Extracting insights from data to guide business decisions.",
-      icon: LineChart,
-      techs: ["Python", "Pandas", "SQL", "Data Visualization", "Jupyter"]
-    },
+    
   ];
 
   return (
@@ -84,9 +73,9 @@ const Skills = () => {
           <span className="section-number">02.</span> Skills
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
-            <Card key={skill.title} className="card-hover border border-border/60">
+            <Card key={skill.title} className="card-hover border max-w-[500px] border-border/60">
               <CardHeader className="pb-2">
                 <skill.icon className="h-10 w-10 p-1 rounded-md text-teal bg-navy-dark/10 mb-2" />
                 <CardTitle>{skill.title}</CardTitle>
