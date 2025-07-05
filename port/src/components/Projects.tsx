@@ -65,6 +65,7 @@ const Projects = () => {
       title: "Weather Dashboard",
       description: "A weather dashboard that shows current and forecast weather data based on location.",
       tags: ["JavaScript", "Weather API", "CSS", "Responsive Design"],
+      image: "https://images.unsplash.com/photo-1705077296278-d82dd5c8662f?q=80&w=1709&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       githubLink: "#",
       liveLink: "#"
     },
@@ -77,32 +78,14 @@ const Projects = () => {
       liveLink: "#"
     },
     {
-      title: "Real Estate Listings",
-      description: "A platform for browsing and filtering real estate properties.",
+      title: "Youtube Clone",
+      description: "A feature-rich YouTube clone that replicates core functionalities of the original platform, allowing users to upload, browse, and watch videos in a responsive and interactive interface.",
       tags: ["Vue.js", "Firebase", "Google Maps API"],
+      image: "https://images.unsplash.com/photo-1540655037529-dec987208707?q=80&w=2121&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       githubLink: "#",
       liveLink: "#"
     },
-    {
-      title: "Fitness Tracker",
-      description: "A mobile-first web app for tracking workouts and fitness progress.",
-      tags: ["React Native", "Firebase", "Chart.js"],
-      githubLink: "#"
-    },
-    {
-      title: "Movie Database",
-      description: "A searchable movie database using the TMDB API with user reviews.",
-      tags: ["Angular", "TMDB API", "RxJS"],
-      githubLink: "#",
-      liveLink: "#"
-    },
-    {
-      title: "Budget Planner",
-      description: "A personal finance app for tracking income, expenses, and savings goals.",
-      tags: ["React", "D3.js", "LocalStorage"],
-      githubLink: "#",
-      liveLink: "#"
-    }
+
   ];
 
   const categories = [
@@ -150,7 +133,7 @@ const Projects = () => {
               <ProjectCard key={`featured-${index}`} {...project} />
             ))}
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-12">
             {filteredProjects
               .filter(project => !project.featured)
               .slice(0, visibleProjects)
